@@ -33,13 +33,13 @@ class ThirdPartyCallerQuizTest {
         // 8/10 are fast calls
         callDt(8, FAST, "???"); // TODO OK vs FALLBACK
         waitForCbMetrics();
-        assertEquals("???", getDtCbState()); // TODO CLOSED vs OPEN
+        assertEquals("???", getDtCbState()); // TODO "CLOSED" vs "OPEN"
 
         // 2/10 are slow (20%)
         callDt(2, SLOW, "???"); // TODO OK vs FALLBACK
 
         // should go into ??? state
-        assertEquals("???", getDtCbState()); // TODO CLOSED vs OPEN
+        assertEquals("???", getDtCbState()); // TODO "CLOSED" vs "OPEN"
 
         // should return ??? value
         callDt(1, FAST, "???"); // TODO OK vs FALLBACK
@@ -52,7 +52,7 @@ class ThirdPartyCallerQuizTest {
         callDt(2, SLOW, "???"); // TODO OK vs FALLBACK
 
         // should go into ??? state
-        assertEquals("???", getDtCbState()); // TODO CLOSED vs OPEN
+        assertEquals("???", getDtCbState()); // TODO "CLOSED" vs "OPEN"
 
         // should return ??? value
         callDt(1, FAST, "???"); // TODO OK vs FALLBACK
@@ -65,7 +65,7 @@ class ThirdPartyCallerQuizTest {
         callDt(2, FAST, "???"); // TODO OK vs FALLBACK
 
         // should go into ??? state
-        assertEquals("???", getDtCbState()); // TODO CLOSED vs OPEN
+        assertEquals("???", getDtCbState()); // TODO "CLOSED" vs "OPEN"
 
         // should return an ??? value
         callDt(1, SLOW, "???"); // TODO OK vs FALLBACK
@@ -76,13 +76,13 @@ class ThirdPartyCallerQuizTest {
         // 8/10 are fast calls
         callTl(8, FAST, "???"); // TODO OK vs FALLBACK
         waitForCbMetrics();
-        assertEquals("???", getTlCbState()); // TODO CLOSED vs OPEN
+        assertEquals("???", getTlCbState()); // TODO "CLOSED" vs "OPEN"
 
         // 2/10 are slow (20%)
         callTl(2, SLOW, "???"); // TODO OK vs FALLBACK
 
         // should go into ??? state
-        assertEquals("???", getTlCbState()); // TODO CLOSED vs OPEN
+        assertEquals("???", getTlCbState()); // TODO "CLOSED" vs "OPEN"
 
         // should return ??? value
         callTl(1, FAST, "???"); // TODO OK vs FALLBACK
@@ -95,7 +95,7 @@ class ThirdPartyCallerQuizTest {
         callTl(2, SLOW, "???"); // TODO OK vs FALLBACK
 
         // should go into ??? state
-        assertEquals("???", getTlCbState()); // TODO CLOSED vs OPEN
+        assertEquals("???", getTlCbState()); // TODO "CLOSED" vs "OPEN"
 
         // should return ??? value
         callTl(1, FAST, "???"); // TODO OK vs FALLBACK
@@ -108,7 +108,7 @@ class ThirdPartyCallerQuizTest {
         callTl(2, FAST, "???"); // TODO OK vs FALLBACK
 
         // should go into ??? state
-        assertEquals("???", getTlCbState()); // TODO CLOSED vs OPEN
+        assertEquals("???", getTlCbState()); // TODO "CLOSED" vs "OPEN"
 
         // should return ??? value
         callTl(1, SLOW, "???"); // TODO OK vs FALLBACK

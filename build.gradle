@@ -17,6 +17,7 @@ repositories {
 
 ext {
     set('springCloudVersion', "2023.0.0")
+    set('resilience4j.version', "2.2.0")
 }
 
 dependencies {
@@ -24,6 +25,7 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'io.github.resilience4j:resilience4j-micrometer'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

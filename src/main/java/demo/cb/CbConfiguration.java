@@ -34,6 +34,7 @@ public class CbConfiguration {
                 .enableAutomaticTransitionFromOpenToHalfOpen()
                 .minimumNumberOfCalls(5) // number of calls before failure aggregate is calculated and a state transition can occur
                 .permittedNumberOfCallsInHalfOpenState(2) // after 2 calls in HALF-OPEN calculate state transition
+                .writableStackTraceEnabled(false)
                 .build();
 
         var timeLimiterConfig = TimeLimiterConfig.ofDefaults();
@@ -61,6 +62,7 @@ public class CbConfiguration {
                 .enableAutomaticTransitionFromOpenToHalfOpen()
                 .minimumNumberOfCalls(5) // number of calls before failure aggregate is calculated and a state transition can occur
                 .permittedNumberOfCallsInHalfOpenState(2) // after 2 calls in HALF-OPEN calculate state transition
+                .writableStackTraceEnabled(false)
                 .build();
 
         // Every execution taking longer than 100ms returns fallback value and increments the failure counter
